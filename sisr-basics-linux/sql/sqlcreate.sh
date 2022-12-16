@@ -18,6 +18,6 @@ then
 fi
 
 
-$MYSQL -uroot -p -e "$SQL"
+$MYSQL -r -e "$SQL"
 
 echo "Database sisr and user usersisr created with a password pwsisr"
