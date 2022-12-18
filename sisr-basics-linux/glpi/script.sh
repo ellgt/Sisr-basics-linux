@@ -25,7 +25,7 @@ echo "  Require all granted" >> /etc/apache2/conf-available/glpi.conf
 echo "</Directory>" >> /etc/apache2/conf-available/glpi.conf
 
 cd
-chown -R www-data /var/www/html/glpi/
+sudo chown -R www-data /opt/glpi/
 sudo a2enconf glpi.conf
 sudo systemctl restart apache2
 clear
