@@ -24,6 +24,8 @@ echo "  AllowOverride Limit Options FileInfo" >> /etc/apache2/conf-available/glp
 echo "  Require all granted" >> /etc/apache2/conf-available/glpi.conf
 echo "</Directory>" >> /etc/apache2/conf-available/glpi.conf
 
+cd
+chown -R www-data /var/www/html/glpi/
 sudo a2enconf glpi.conf
 sudo systemctl restart apache2
 clear
