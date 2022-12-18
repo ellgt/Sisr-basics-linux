@@ -5,8 +5,8 @@ readonly E_BADARGS=65
 readonly MYSQL=`which mysql`
 
 readonly Q1="CREATE DATABASE $1;"
-readonly Q2="CREATE USER '$2'@'localhost' IDENTIFIED BY '<$3>';"
-readonly Q3="GARNT ALL on $1.* TO '$2'@'localhost';"
+readonly Q2="CREATE USER '$2'@'localhost' IDENTIFIED BY '$3';"
+readonly Q3="GRANT ALL on $1.* TO '$2'@'localhost';"
 readonly Q4="FLUSH PRIVILEGES;"
 readonly SQL="${Q1}${Q2}${Q3}${Q4}"
 
