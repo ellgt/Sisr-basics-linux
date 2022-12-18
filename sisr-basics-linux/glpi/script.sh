@@ -1,7 +1,7 @@
 #!/bin/bash
 sudo apt update
 sudo apt-get -y install mysql-server mysql-client
-sudo apt-get -y install curl bind9 ghostscript apache2 php libapache2-mod-php openssl php-curl php-gd php-ldap php-intl php-json php-mysql php-mbstring php-xml php-zip php-imagick php-imap apcupsd php-apcu php-cli php-bcmath php-fpm php-cgi open-vm-tools open-vm-tools-desktop
+sudo apt-get -y install curl bind9 ghostscript apache2 php libapache2-mod-php openssl php-curl php-bz2 php-xlmprc php-gd php-ldap php-intl php-json php-mysql php-mbstring php-xml php-zip php-imagick php-imap apcupsd php-apcu php-cli php-bcmath php-fpm php-cgi open-vm-tools open-vm-tools-desktop
 
 clear
 cd ..
