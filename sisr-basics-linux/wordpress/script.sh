@@ -31,7 +31,8 @@ echo "    </Directory>" >> /etc/apache2/sites-available/wordpress.conf
 echo "</VirtualHost>" >> /etc/apache2/sites-available/wordpress.conf
 echo "" >> /etc/apache2/sites-available/wordpress.conf
 echo "" >> /etc/apache2/sites-available/wordpress.conf
-
+sudo a2enmod proxy_fcgi setenvif
+a2enconf php7.4-fpm
 sudo a2ensite wordpress
 sudo a2enmod rewrite
 sudo a2dissite 000-default
