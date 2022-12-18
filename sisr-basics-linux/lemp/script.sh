@@ -2,7 +2,7 @@
 sudo apt update
 sudo apt-get -y install mysql-server mysql-client
 
-sudo apt-get -y install bind9 nginx php sudo apt-get -y install curl bind9 ghostscript apache2 php libapache2-mod-php openssl php-curl php-gd php-ldap php-intl php-json php-mysql php-mbstring php-xml php-zip php-imagick php-imap php-apcu php-cli php-bcmath php-fpm php-cgi open-vm-tools open-vm-tools-desktop
+sudo apt-get -y install bind9 nginx php sudo apt-get -y install curl bind9 ghostscript apache2 php libapache2-mod-php openssl php-curl php-gd php-ldap apcupsd php-apcu php-intl php-json php-mysql php-mbstring php-xml php-zip php-imagick php-imap php-apcu php-cli php-bcmath php-fpm php-cgi open-vm-tools open-vm-tools-desktop
 sudo ufw allow 'Nginx HTTP'
 clear
 echo ""
