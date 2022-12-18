@@ -38,6 +38,7 @@ sudo a2dissite 000-default
 sudo a2dissite 000-default
 sudo a2enconf php7.4-fpm
 sudo a2enmod proxy_fcgi setenvif
+sudo systemctl restart apache2
 
 sudo -u www-data cp /srv/www/wordpress/wp-config-sample.php /srv/www/wordpress/wp-config.php
 sudo -u www-data sed -i 's/database_name_here/wordpress/' /srv/www/wordpress/wp-config.php
