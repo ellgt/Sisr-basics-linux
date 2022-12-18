@@ -13,4 +13,4 @@ then
   exit $E_BADARGS
 fi
 $MYSQL -r -e "$SQL"
-echo "Database $1 and user $2 created with a $3 pwsisr"
+echo "Database $1 and user $2 created with a password $3"
