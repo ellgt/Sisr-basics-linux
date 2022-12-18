@@ -31,12 +31,14 @@ echo "    </Directory>" >> /etc/apache2/sites-available/wordpress.conf
 echo "</VirtualHost>" >> /etc/apache2/sites-available/wordpress.conf
 echo "" >> /etc/apache2/sites-available/wordpress.conf
 echo "" >> /etc/apache2/sites-available/wordpress.conf
-sudo a2enmod proxy_fcgi setenvif
-a2enconf php7.4-fpm
+
 sudo a2ensite wordpress
 sudo a2enmod rewrite
 sudo a2dissite 000-default
 sudo a2dissite 000-default
+sudo a2enconf php7.4-fpm
+sudo a2enmod proxy_fcgi setenvif
+
 sudo -u www-data cp /srv/www/wordpress/wp-config-sample.php /srv/www/wordpress/wp-config.php
 sudo -u www-data sed -i 's/database_name_here/wordpress/' /srv/www/wordpress/wp-config.php
 sudo -u www-data sed -i 's/username_here/userwp/' /srv/www/wordpress/wp-config.php
