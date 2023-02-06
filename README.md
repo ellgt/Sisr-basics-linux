@@ -6,8 +6,7 @@ This a little tool dev by a young student who name Elliot Gautreau
 
 just do this command in sisr-basics-linux/ :
 
-sudo chmod +x install.sh
-sudo ./install.sh
+sudo chmod +x install.sh && sudo ./install.sh
 
 
 # What's inside ?
